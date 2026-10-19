@@ -27,3 +27,6 @@ export * from "./salaryPolicyImpact";
 export * from "./blockedExecutionDiagnostics";
 export * from "./treasuryReserveReleaseValidation";
 export * from "./payloadSchema";
+export * from "./executionReferenceCollisionGuard";
+export * from "./payrollApprovalQuorumValidator";
+export * from "./duplicatePayoutInstructionDetector";

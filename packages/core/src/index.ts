@@ -68,6 +68,7 @@ export type {
   ConfigValidationResult,
   ConfigMigrationWarning,
   ConfigMigrationResult,
+  LoadClientConfigOptions,
 } from "./config";
 export {
   DEFAULT_CONFIG,
@@ -77,6 +78,7 @@ export {
   assertValidConfig,
   migrateConfig,
   detectDeprecatedConfigFields,
+  loadClientConfig,
 } from "./config";
 export * from "./cache";
 export * from "./amendments";
@@ -244,3 +246,17 @@ export * from "./payroll/salaryPolicyImpact";
 export * from "./schema";
 export * from "./migrations";
 export { detectPayrollPayloadSchema } from "./payroll/payloadSchema";
+// ── Cross-Currency Rounding Safeguards ──────────────────────────────────────
+export * from "./settlement/roundingSafeguards";
+
+// ── Audit Sequence Verification ─────────────────────────────────────────────
+export * from "./audit/sequenceVerification";
+
+// ── Stalled Payroll Run Recovery Guidance ───────────────────────────────────
+export * from "./recovery/stalledRunRecovery";
+
+// ── Payroll Policy Effective-Date Guardrails ────────────────────────────────
+export * from "./policy/effectiveDateGuardrails";
+
+// ── Duplicate Payout Instruction Detection ──────────────────────────────────
+export * from "./payroll/duplicatePayoutInstructionDetector";
