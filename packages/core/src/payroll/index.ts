@@ -26,3 +26,4 @@ export * from "./periodLabel";
 export * from "./salaryPolicyImpact";
 export * from "./blockedExecutionDiagnostics";
 export * from "./treasuryReserveReleaseValidation";
+export * from "./payloadSchema";
